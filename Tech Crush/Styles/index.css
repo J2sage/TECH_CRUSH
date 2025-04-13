@@ -1,0 +1,102 @@
+body{
+  background-color: hsl(30, 38%, 92%);
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 100px;
+  height: 330px;
+  border-radius: 40px;
+}
+.img-container{
+  height: 330px;
+}
+.image{
+  height: 100%;
+  object-fit: cover;
+} 
+.info{
+  background-color: white;
+  padding: 15px;
+  width: 23%;
+  height: 300px;
+}
+.title{
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 3px;
+}
+.type{
+  font-size: 23px;
+  font-weight: 700;
+  font-family: Fraunces;
+}
+.description{
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+  font-weight: 500;
+}
+.price{
+  font-family: Fraunces;
+  font-weight: 700;
+  font-size: 25px;
+  color: hsl(158, 36%, 37%);
+}
+span{
+  font-size: 13px;
+  color: hsl(212, 21%, 14%);
+  text-decoration: line-through;
+  margin-left: 5px;
+  font-family: Montserrat;
+  font-weight: 700;
+}
+button{
+ background-color: hsl(158, 36%, 37%);
+ color: white;
+ padding: 10px 20px;
+ width: 90%;
+ border: none;
+ border-radius: 10px;
+ cursor: pointer;
+}
+button:hover{
+  background-color: hsl(158, 45%, 26%)
+}
+.owner{
+  display: flex;
+  justify-content: center;
+  font-family: Fraunces;
+  color: hsl(158, 36%, 37%);
+}
+.owner:hover{
+  cursor: pointer;
+  color: hsl(212, 21%, 14%);
+}
+
+
+ @media (max-width: 940px) {
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+  }
+  .img-container{
+    height: 200px;
+  }
+  .info{
+    background-color: white;
+    padding: 15px;
+    width: 255px;
+    height: 300px;
+  }
+  .price{
+    text-align: center;
+  }
+  .owner{
+    margin: 100px;
+  }
+} 
